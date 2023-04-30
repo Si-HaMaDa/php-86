@@ -28,7 +28,7 @@ require_once __DIR__ . '/../../config.php';
     <meta name="theme-color" content="#712cf9">
 
     <!-- Custom styles for this template -->
-    <link href="<?=SITE_URL?>/admin/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="<?= SITE_URL ?>/admin/css/sticky-footer-navbar.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -104,10 +104,13 @@ require_once __DIR__ . '/../../config.php';
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?=ADMIN_URL?>">Home</a>
+                            <a class="nav-link active" aria-current="page" href="<?= ADMIN_URL ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=ADMIN_URL?>/users">Users</a>
+                            <a class="nav-link" href="<?= ADMIN_URL ?>/users">Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= ADMIN_URL ?>/categories">Categories</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -123,18 +126,19 @@ require_once __DIR__ . '/../../config.php';
     <main class="flex-shrink-0">
         <div class="container">
 
-            <?php if (!empty($_SESSION['messages']['error'])): ?>
+            <?php if (!empty($_SESSION['messages']['error'])) : ?>
                 <div class="alert alert-danger">
-                    <?=$_SESSION['messages']['error']?>
+                    <?= $_SESSION['messages']['error'] ?>
                 </div>
             <?php
-unset($_SESSION['messages']['error']);
-endif;
-?>
+                unset($_SESSION['messages']['error']);
+            endif;
+            ?>
 
-            <?php if (!empty($_SESSION['messages']['success'])): ?>
+            <?php if (!empty($_SESSION['messages']['success'])) : ?>
                 <div class="alert alert-success">
-                    <?=$_SESSION['messages']['success']?>
+                    <?= $_SESSION['messages']['success'] ?>
                 </div>
             <?php
-unset($_SESSION['messages']['success']);endif;?>
+                unset($_SESSION['messages']['success']);
+            endif; ?>

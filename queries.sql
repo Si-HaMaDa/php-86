@@ -6,3 +6,9 @@ CREATE TABLE users (
     PRIMARY KEY (id),
     UNIQUE (email)
 );
+
+CREATE TABLE categories (
+    id int AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    PRIMARY KEY (id)
+);
