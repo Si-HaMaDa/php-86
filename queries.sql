@@ -12,3 +12,9 @@ CREATE TABLE categories (
     name varchar(100) NOT NULL,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE hashtags (
+    id int AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    PRIMARY KEY (id)
+);

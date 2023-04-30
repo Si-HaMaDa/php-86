@@ -112,6 +112,9 @@ require_once __DIR__ . '/../../config.php';
                         <li class="nav-item">
                             <a class="nav-link" href="<?= ADMIN_URL ?>/categories">Categories</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= ADMIN_URL ?>/hashtags">Hashtags</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
